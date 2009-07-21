@@ -39,7 +39,8 @@ DNSServiceBrowse(char *type, SV *callback)
 CODE:
 {
     DNSServiceRef sdRef;
-    DNSServiceBrowse(
+    DNSServiceErrorType res;
+    res = DNSServiceBrowse(
                      &sdRef,
                      0, /* flags */
                      0, /* interface */
@@ -48,6 +49,10 @@ CODE:
                      replyCallback,
                      newSVsv(callback) /* context */
                      );
+
+    if (res != kDNSServiceErr_NoError) {
+        XSRETURN_UNDEF;
+    }
 
     RETVAL = sdRef;
 }
