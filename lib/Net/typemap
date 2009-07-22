@@ -1,2 +1,2 @@
 DNSServiceRef T_PTROBJ
-DNSServiceErrorType IV
+DNSServiceErrorType T_UV
