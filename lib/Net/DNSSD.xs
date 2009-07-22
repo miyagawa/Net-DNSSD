@@ -112,17 +112,9 @@ OUTPUT: RETVAL
 
 int
 DNSServiceRefSockFD(DNSServiceRef sdRef)
-CODE: 
-    RETVAL = DNSServiceRefSockFD(sdRef);
-OUTPUT: RETVAL
 
 DNSServiceErrorType
 DNSServiceProcessResult(DNSServiceRef sdRef)
-CODE:
-    RETVAL = DNSServiceProcessResult(sdRef);
-OUTPUT: RETVAL
 
 void
 DNSServiceRefDeallocate(DNSServiceRef sdRef)
-CODE:
-    DNSServiceRefDeallocate(sdRef);
