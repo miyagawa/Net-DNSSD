@@ -1,4 +1,6 @@
-Revision history for Perl extension Net::DNSSD
+Revision history for Perl extension Net::DNSSD.
 
-0.01  Mon Jul 20 17:49:40 2009
-        - original version
+0.01  Wed Jul 22 11:13:13 2009
+	- original version; created by h2xs 1.23 with options
+		-x -n Net::DNSSD /usr/include/dns_sd.h
+

@@ -1,0 +1,26 @@
+DNSRecordRef					T_PTROBJ
+DNSRecordRef *					T_PTROBJ
+DNSServiceBrowseReply				T_PTROBJ
+DNSServiceDomainEnumReply			T_PTROBJ
+DNSServiceErrorType				T_IV
+DNSServiceFlags					T_UV
+DNSServiceGetAddrInfoReply			T_PTROBJ
+DNSServiceNATPortMappingReply			T_PTROBJ
+DNSServiceProtocol				T_UV
+DNSServiceQueryRecordReply			T_PTROBJ
+DNSServiceRef					T_PTROBJ
+DNSServiceRef *					T_PTROBJ
+DNSServiceRegisterRecordReply			T_PTROBJ
+DNSServiceRegisterReply				T_PTROBJ
+DNSServiceResolveReply				T_PTROBJ
+TXTRecordRef *					T_PTROBJ
+const TXTRecordRef *				T_PTROBJ
+const char *					T_PTROBJ
+const void *					T_PTROBJ
+const void **					T_PTROBJ
+const struct sockaddr *				T_PTROBJ       
+uint16_t					T_UV
+uint32_t					T_UV
+uint32_t *					T_PTROBJ
+uint8_t						T_U_CHAR
+uint8_t *					T_PV
