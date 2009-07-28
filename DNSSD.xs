@@ -67,7 +67,7 @@ static void ResolveReplyCallback(
     XPUSHs(sv_2mortal(newSVpv(fullname, 0)));
     XPUSHs(sv_2mortal(newSVpv(hosttarget, 0)));
     XPUSHs(sv_2mortal(newSVuv(port)));
-    XPUSHs(sv_2mortal(newSVpv(txtRecord, 0)));
+    XPUSHs(sv_2mortal(newSVpv((const char*)txtRecord, 0)));
     RUN_CALLBACK(context);
 }                                 
 
